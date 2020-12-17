@@ -24,14 +24,16 @@
 }
 
 .feed + .feed.feed-paged {
-    margin-top: 3rem;
+    margin-top: 0;
     border-top: 0;
+    border-top: 1px solid var(--light-gray-color);
 }
 
 .feed-calendar {
     display: flex;
     margin-right: 1.5rem;
     min-width: 45px;
+    margin-top: 0.25rem;
     color: var(--brand-color);
     font-size: 1.1rem;
     font-weight: 800;
@@ -46,12 +48,14 @@
 .feed-title {
     flex-grow: 1;
     overflow: hidden;
+    margin-top: 0;
     margin-bottom: 0;
     padding-right: 1rem;
     font-size: 1.6rem;
     font-weight: 400;
     text-overflow: ellipsis;
     white-space: nowrap;
+    font-family: var(--font-base);
 }
 
 .feed-right {
@@ -85,4 +89,19 @@
     color: var(--secondary-text-color);
     transition: transform 0.2s var(--animation-base);
     transform: translateX(2rem);
+}
+
+.feed-list-icon {
+    position: relative;
+    right: 0;
+    width: 14px;
+    height: 14px;
+    color: var(--secondary-text-color);
+    top: 0.1rem;
+}
+
+@media (max-width: 767px) {
+    .feed-title {
+        width: 63%;
+    }
 }
