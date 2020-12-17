@@ -15,6 +15,7 @@
 @import "site/burger.css";
 @import "blog/feed.css";
 @import "blog/featured.css";
+@import "blog/footnotes.css";
 @import "blog/pagination.css";
 @import "blog/single.css";
 @import "blog/author.css";
