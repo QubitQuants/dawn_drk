@@ -1,0 +1,43 @@
+.resume-co {
+    margin-top: 1rem !important;
+    font-weight: bolder;
+}
+
+ul .resume-role {
+    font-size: 90%;
+    margin-top: 0 !important;
+    margin-left: 0.8rem;
+    font-style: italic;
+}
+
+li .resume-role {
+    font-size: 90%;
+}
+
+.resume-desc {
+    font-size: 90%;
+    margin-top: 0rem !important;
+    margin-left: 1.35rem !important;
+    padding-left: 1.35rem;
+    border-left: 1px solid var(--light-gray-color);
+    margin-bottom: 1.5rem !important;
+}
+
+hr.resume-break {
+    width: 5%;
+    height: 1px;
+    border-radius: 0;
+    margin-left: 0;
+    margin-right: auto;
+    margin-top: 1rem;
+    margin-bottom: 0rem;
+}
+
+hr.resume-break:after,
+hr.resume-break:before {
+    width: 10%;
+    height: 1px;
+    border-radius: 0;
+    margin-left: 0;
+    margin-right: auto;
+}
