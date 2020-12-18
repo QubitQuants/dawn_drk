@@ -1,10 +1,21 @@
-# Dawn
+# Dawn - AP Fork
+
+## About the Base Theme
 
 A highly functional theme that adapts to the reader's preferences. Let them read, search, subscribe, navigate, and more with ease. Completely free and fully responsive, released under the MIT license.
 
-**Demo: https://dawn.ghost.io**
+** Base Theme Demo: https://dawn.ghost.io**
 
-&nbsp;
+## About This Fork
+
+This fork of Dawn is customized by me, for me, but you're welcome to use this as a starting point for your own project if you like. Some of what I've done:
+
+-   Added the sticky table of contents to _pages_ as well as _posts_.
+-   Stylistic changes (fonts, colors, spacing).
+-   Added support for "linked list" (e.g. Daring Fireball) style posts (example [here](https://alexpriest.com/blog/2020/04/21/a-speck-of-dust/).
+-   I use page content to populate `cover.hbs` and `blog.hbs`, instead of hard coding or using Ghost tags.
+
+---
 
 # Instructions
 
@@ -18,8 +29,8 @@ A highly functional theme that adapts to the reader's preferences. Let them read
 
 ```html
 <script>
-    var gh_search_key = 'API_KEY';
-    var gh_search_migration = 'v1';
+    var gh_search_key = "API_KEY";
+    var gh_search_migration = "v1";
 </script>
 ```
 
@@ -33,8 +44,8 @@ When your site has lots of posts, including the post content in the index cache 
 
 ```html
 <script>
-    var gh_search_key = 'API_KEY';
-    var gh_search_migration = 'v2'; // Increased from v1
+    var gh_search_key = "API_KEY";
+    var gh_search_migration = "v2"; // Increased from v1
     var gh_search_content = false; // Disables content search
 </script>
 ```
@@ -45,7 +56,7 @@ If your logo image isn't recognizable in dark mode, you can set a white version 
 
 ```html
 <script>
-    var gh_white_logo = 'https://example.com/content/images/white-logo.png';
+    var gh_white_logo = "https://example.com/content/images/white-logo.png";
 </script>
 ```
 
@@ -71,7 +82,7 @@ yarn zip
 
 # PostCSS Features Used
 
-- Autoprefixer - Don't worry about writing browser prefixes of any kind, it's all done automatically with support for the latest 2 major versions of every browser.
+-   Autoprefixer - Don't worry about writing browser prefixes of any kind, it's all done automatically with support for the latest 2 major versions of every browser.
 
 # Copyright & License
 
