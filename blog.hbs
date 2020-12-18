@@ -1,0 +1,40 @@
+{{!< default}}
+
+<div class="content-area">
+    <main class="site-main">
+            <section class="archive">
+                <article class="single post no-image">
+                    {{#get "pages" filter="tags:hash-template+tags:hash-blog" as |blog|}}
+                        {{#foreach blog}}
+                            <header class="single-header kg-canvas">
+                                <h1 class="single-title">{{title}}</h1>
+                            </header>
+                            <div class="single-content kg-canvas u-text-format">
+                                {{content}}
+                            </div>
+                        {{/foreach}}
+                    {{/get}}
+                </article>
+
+                    {{#get "tags" limit="all" filter="visibility:public" as |tags|}}
+                        {{#if tags}}
+                            <div class="tag-list">
+                                <span class="tag-list-label">Tags:</span>
+                                {{#foreach tags}}
+                                    <a class="tag-list-item" href="{{url}}">{{name}}</a>
+                                {{/foreach}}
+                            </div>
+                        {{/if}}
+                    {{/get}}
+                </div>
+            </section>
+        </header>
+
+        <div class="post-feed container medium">
+            {{#foreach posts visibility="all"}}
+                {{> "loop"}}
+            {{/foreach}}
+        </div>
+        {{pagination}}
+    </main>
+</div>
