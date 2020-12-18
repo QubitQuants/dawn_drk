@@ -6,7 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{meta_title}}</title>
     <link rel="stylesheet" href="{{asset "built/screen.css"}}">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli:400,400i,700,700i,800">
+    <link rel="stylesheet" href="https://use.typekit.net/nlf8nho.css">
+
+    <!-- Favicon Situation -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png?v=YA3x6XqYr8">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png?v=YA3x6XqYr8">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png?v=YA3x6XqYr8">
+    <link rel="manifest" href="/assets/images/site.webmanifest?v=YA3x6XqYr8">
+    <link rel="mask-icon" href="/assets/images/safari-pinned-tab.svg?v=YA3x6XqYr8" color="#646f2b">
+    <link rel="shortcut icon" href="/assets/images/favicon.ico?v=YA3x6XqYr8">
+    <meta name="msapplication-TileColor" content="#646f2b">
+    <meta name="msapplication-config" content="/assets/images/browserconfig.xml?v=YA3x6XqYr8">
+    <meta name="theme-color" content="#ffffff">
+    <!-- End Favicons -->
 
     <script>
         var siteUrl = '{{@site.url}}';
@@ -41,6 +53,7 @@
         <div class="site-content">
             {{{body}}}
         </div>
+        </section>
         {{> footer}}
         {{> modal}}
         {{> pswp}}
