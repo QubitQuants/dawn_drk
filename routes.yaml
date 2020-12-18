@@ -4,11 +4,21 @@ routes:
   /signin/: members/signin
   /account/: members/account
   /upgrade/: members/upgrade
+  /blog/:
+    controller: channel
+    template: blog
+    data: page.blog
 
 collections:
   /:
-    permalink: /{slug}/
+    permalink: /blog/{year}/{month}/{day}/{slug}/
+    filter: tag:-hash-template
     template: index
+
+  /template/:
+    permalink: /template/{slug}/
+    filter: tag:hash-template
+    template: custom-do-not-index
 
 taxonomies:
   tag: /tag/{slug}/
