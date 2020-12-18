@@ -1,21 +1,22 @@
 {
-    "name": "dawn",
-    "description": "A Ghost theme",
-    "version": "1.0.0",
+    "name": "dawn-ap",
+    "description": "A custom version of Dawn for Ghost",
+    "version": "0.1.2",
     "engines": {
         "ghost": ">=3.0.0",
         "ghost-api": "v3"
     },
     "license": "MIT",
     "author": {
-        "name": "Ghost Foundation",
-        "email": "hello@ghost.org",
-        "url": "https://ghost.org"
+        "name": "Alex Priest",
+        "email": "alexpriest@hey.com",
+        "url": "https://alexpriest.com"
     },
     "keywords": [
         "ghost",
         "theme",
-        "ghost-theme"
+        "ghost-theme",
+        "dawn"
     ],
     "config": {
         "posts_per_page": 5,
