@@ -7,7 +7,13 @@
             {{date published_at format="DD"}}
         </div>
     </div>
+    {{#has tag="#link"}}
+    <h2 class="feed-title">{{title}} <svg class="icon feed-list-icon">
+        <use xlink:href="#feed-link"></use>
+    </svg></h2></a>
+    {{else}}
     <h2 class="feed-title">{{title}}</h2>
+    {{/has}}
     <div class="feed-right">
         {{#if @labs.members}}
             <svg class="icon feed-visibility feed-visibility-{{visibility}}">
