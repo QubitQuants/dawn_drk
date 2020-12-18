@@ -26,7 +26,7 @@ $(function () {
 
 $(window).on('scroll', function () {
     'use strict';
-    if (body.hasClass('post-template')) {
+    if (body.hasClass('post-template') || body.hasClass('page-template')) {
         if (timeout) {
             window.cancelAnimationFrame(timeout);
         }
@@ -36,13 +36,13 @@ $(window).on('scroll', function () {
 
 $(window).on('load', function () {
     'use strict';
-    if (body.hasClass('post-template')) {
+    if (body.hasClass('post-template') || body.hasClass('page-template')) {
         titleOffset = $('.single-title').offset().top;
 
         var content = $('.single-content');
         var contentHeight = content.height();
         contentOffset =
-            content.offset().top + contentHeight - $(window).height() / 2;
+            content.offset().top + contentHeight - $(window).height();
     }
 });
 
@@ -165,14 +165,12 @@ function pagination() {
         });
     }
 
-    wrapper.on('append.infiniteScroll', function (
-        event,
-        response,
-        path,
-        items
-    ) {
-        $(items[0]).addClass('feed-paged');
-    });
+    wrapper.on(
+        'append.infiniteScroll',
+        function (event, response, path, items) {
+            $(items[0]).addClass('feed-paged');
+        }
+    );
 }
 
 function video() {
@@ -228,7 +226,7 @@ function table() {
 
 function toc() {
     'use strict';
-    if (body.hasClass('post-template')) {
+    if (body.hasClass('post-template') || body.hasClass('page-template')) {
         var output = '';
         var toggle = $('.sticky-toc-button');
 
@@ -324,7 +322,10 @@ function search() {
     var searchButton = $('.search-button');
     var searchResult = $('.search-result');
     var popular = $('.popular-wrapper');
-    var includeContent = typeof gh_search_content == 'undefined' || gh_search_content == true ? true : false;
+    var includeContent =
+        typeof gh_search_content == 'undefined' || gh_search_content == true
+            ? true
+            : false;
 
     var url =
         siteUrl +
@@ -349,7 +350,9 @@ function search() {
             localStorage.setItem('dawn_search_index', JSON.stringify(index));
             localStorage.setItem('dawn_search_last', data.posts[0].updated_at);
         } catch (e) {
-            console.error('Your browser local storage is full. Update your search settings following the instruction at https://github.com/TryGhost/Dawn#disable-content-search');
+            console.error(
+                'Your browser local storage is full. Update your search settings following the instruction at https://github.com/TryGhost/Dawn#disable-content-search'
+            );
         }
     }
 
