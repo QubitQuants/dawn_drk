@@ -12,7 +12,7 @@ This fork of Dawn is customized by me, for me, but you're welcome to use this as
 
 -   Added the sticky table of contents to _pages_ as well as _posts_.
 -   Stylistic changes (fonts, colors, spacing).
--   Added support for "linked list" (e.g. Daring Fireball) style posts (example [here](https://alexpriest.com/blog/2020/04/21/a-speck-of-dust/).
+-   Added support for "linked list" (e.g. Daring Fireball) style posts (example [here](https://alexpriest.com/blog/2020/04/21/a-speck-of-dust/)).
 -   I use page content to populate `cover.hbs` and `blog.hbs`, instead of hard coding or using Ghost tags.
 
 ---
