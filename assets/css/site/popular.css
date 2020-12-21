@@ -7,6 +7,7 @@
     color: var(--secondary-text-color);
     font-size: 1.2rem;
     text-transform: uppercase;
+    font-family: var(--font-base);
 }
 
 .popular-feed {
@@ -21,5 +22,8 @@
 }
 
 .popular::before {
-    content: "#";
+    content: "•";
+    margin-right: 0.4rem;
+    margin-left: 0.4rem;
+    color: var(--primary-text-color);
 }
