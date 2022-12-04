@@ -1,8 +1,8 @@
-# Dawn - AP Fork
+# Dawn - Alex Priest Fork
 
 ## About the Base Theme
 
-A highly functional theme that adapts to the reader's preferences. Let them read, search, subscribe, navigate, and more with ease. Completely free and fully responsive, released under the MIT license.
+A highly functional theme that adapts to the reader's preferences. Let them read, search, subscribe, navigate, and more with ease. Completely free and fully responsive, released under the MIT license. The latest dawn theme does not have a built in `ToC` out of the box, thats why I used this theme.
 
 **Base Theme Demo: https://dawn.ghost.io**
 
@@ -10,10 +10,21 @@ A highly functional theme that adapts to the reader's preferences. Let them read
 
 This fork of Dawn is customized by me, for me, but you're welcome to use this as a starting point for your own project if you like. Some of what I've done:
 
+**Alex Priest's Changes**
 -   Added the sticky table of contents to _pages_ as well as _posts_.
 -   Stylistic changes (fonts, colors, spacing).
 -   Added support for "linked list" (e.g. Daring Fireball) style posts (example [here](https://alexpriest.com/blog/2020/04/21/a-speck-of-dust/)).
 -   I use page content to populate `cover.hbs` and `blog.hbs`, instead of hard coding or using Ghost tags.
+
+I am using ghost v5.24 so some changes are specific to removing errors and warnings because of the ghost update,  <br>
+**My Changes** :
+-   Changed Footer icons and URL path
+-   Changed Theme Name in package.json to my name and email etc.
+-   Changed brand color
+-   Removed engine field and updated ghost version in `package.json`  ```"engines": { "ghost": ">=4.0.0" }```
+-   Replaced `{{@labs.members}}` with `{{@site.members_enabled}}` using search and replace
+-   Replaced `{{@site.lang}}` with `{{@site.locale}}` using search and replace
+
 
 ---
 
