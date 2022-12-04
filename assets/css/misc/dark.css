@@ -1,5 +1,5 @@
 .theme-dark:root {
-    --brand-color: #a6b55b;
+    --brand-color: #029aff;
     --primary-text-color: #e2e2e2;
     --secondary-text-color: #868686;
     --white-color: #282c35;
@@ -43,7 +43,7 @@
 
 @media (prefers-color-scheme: dark) {
     html:not(.theme-light):root {
-        --brand-color: #a6b55b;
+        --brand-color: #029aff;
         --primary-text-color: #e2e2e2;
         --secondary-text-color: #868686;
         --white-color: #282c35;

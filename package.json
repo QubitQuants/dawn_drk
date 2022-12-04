@@ -1,16 +1,15 @@
 {
-    "name": "dawn-ap",
+    "name": "dawn-diliprk",
     "description": "A custom version of Dawn for Ghost",
     "version": "0.1.2",
     "engines": {
-        "ghost": ">=3.0.0",
-        "ghost-api": "v3"
+        "ghost": ">=4.0.0"
     },
     "license": "MIT",
     "author": {
-        "name": "Alex Priest",
-        "email": "alexpriest@hey.com",
-        "url": "https://alexpriest.com"
+        "name": "Dilip Rajkumar",
+        "email": "diliprk@gmail.com",
+        "url": "https://diliprk.github.io"
     },
     "keywords": [
         "ghost",

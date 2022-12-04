@@ -41,11 +41,11 @@
         {{/if}}
     </header>
     <div class="single-content kg-canvas u-text-format">
-        {{#if @labs.members}}
+        {{#if @site.members_enabled}}
             {{#if access}}
                 {{content}}
                 {{#is "post"}}
-                    {{#if @labs.members}}
+                    {{#if @site.members_enabled}}
                         {{#unless @member}}
                             <section class="single-cta">
                                 <h2 class="single-cta-title">Enjoying these posts? Subscribe for more</h2>
@@ -79,7 +79,7 @@
     </div>
     {{#is "post"}}
         <footer class="single-footer container medium">
-            <div class="single-footer-left">
+            {{!-- <div class="single-footer-left">
                 {{#prev_post}}
                     <div class="navigation navigation-previous">
                         <a class="navigation-link" href="{{url}}"
@@ -90,10 +90,21 @@
                         </a>
                     </div>
                 {{/prev_post}}
-            </div>
+            </div> --}}
             <div class="single-footer-middle">
+             <div class="single-footer-top">
+                <h3 class="single-footer-title">Published by:</h3>
+                <div class="author-list">
+                    {{#foreach authors}}
+                    <div class="author-image-placeholder u-placeholder square">
+                        <a href="{{url}}" title="{{name}}">
+                            <img class="author-image u-object-fit" src="{{img_url profile_image size="xs"}}" alt="{{name}}" loading="lazy">
+                        </a>
+                    </div>
+                    {{/foreach}}
+                </div>               
             </div>
-            <div class="single-footer-right">
+            {{!-- <div class="single-footer-right">
                 {{#next_post}}
                     <div class="navigation navigation-next">
                         <a class="navigation-link" href="{{url}}"
@@ -104,7 +115,7 @@
                         </a>
                     </div>
                 {{/next_post}}
-            </div>
+            </div> --}}
         </footer>
     {{/is}}
 </article>

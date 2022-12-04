@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{@site.lang}}">
+<html lang="{{@site.locale}}">
 
 <head>
     <meta charset="utf-8">
@@ -13,15 +13,18 @@
     <link rel="icon" type="image/png" sizes="32x32" href="{{asset "images/favicon-32x32.png?v=YA3x6XqYr8"}}">
     <link rel="icon" type="image/png" sizes="16x16" href="{{asset "images/favicon-16x16.png?v=YA3x6XqYr8"}}">
     <link rel="manifest" href="{{asset "images/site.webmanifest?v=YA3x6XqYr8"}}">
-    <link rel="mask-icon" href="{{asset "images/safari-pinned-tab.svg?v=YA3x6XqYr8" color="#646f2b"}}">
+    <link rel="mask-icon" href="{{asset "images/safari-pinned-tab.svg?v=YA3x6XqYr8" color="#029aff"}}">
     <link rel="shortcut icon" href="{{asset "images/favicon.ico?v=YA3x6XqYr8"}}">
-    <meta name="msapplication-TileColor" content="#646f2b">
+    <meta name="msapplication-TileColor" content="#029aff">
     <meta name="msapplication-config" content="/assets/images/browserconfig.xml?v=YA3x6XqYr8">
     <meta name="theme-color" content="#ffffff">
     <!-- End Favicons -->
 
     <script>
         var siteUrl = '{{@site.url}}';
+        // Force dark mode
+        // localStorage.setItem('dawn_theme', 'dark');
+        // document.documentElement.classList.add('theme-dark');          
     </script>
 
     <script>
