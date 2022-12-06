@@ -1,4 +1,5 @@
 @import "general/normalize.css";
+@import "prism.css";
 @import "general/basics.css";
 @import "general/grid.css";
 @import "general/button.css";

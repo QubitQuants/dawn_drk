@@ -24,7 +24,10 @@ I am using ghost v5.24 so some changes are specific to removing errors and warni
 -   Removed engine field and updated ghost version in `package.json`  ```"engines": { "ghost": ">=4.0.0" }```
 -   Replaced `{{@labs.members}}` with `{{@site.members_enabled}}` using search and replace
 -   Replaced `{{@site.lang}}` with `{{@site.locale}}` using search and replace
+-   Added prism.js custom code syntax highlighting with Copy-Clipboard Button
+-   Fixed `Published by` author position at the end of post in css --> blog --> `single.css`
 
+Regenenrated site files (eg: assets --> built --> screen.css ) using `npm i` and `npm run dev` in the `dawn_drk` theme folder
 **My Website : https://qubitquants.github.io**
 
 ---
