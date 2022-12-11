@@ -88,7 +88,7 @@ blockquote {
     margin-left: 2rem;
     padding: 0rem 3rem;
     border-left: 3px solid var(--brand-color);
-    color: var(--secondary-text-color);
+    color: var(--primary-text-color);
     font-size: 1.7rem;
     line-height: 1.8;
     font-weight: 400;

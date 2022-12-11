@@ -22,7 +22,7 @@
 }
 
 .u-text-format > [id] {
-    margin-top: 6rem;
+    margin-top: 4rem;
 }
 
 .u-text-format > [id] + p {
@@ -40,7 +40,7 @@
 }
 
 .u-text-format h3 {
-    color: var(--secondary-text-color);
+    color: var(--primary-text-color);
     font-size: 2rem;
     letter-spacing: -0.03rem;
 }
