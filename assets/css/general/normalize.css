@@ -46,6 +46,7 @@ code,
 kbd,
 samp {
     font-family: monospace;
+    background-color: var(--light-gray-color);
     font-size: 1em;
 }
 
